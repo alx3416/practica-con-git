@@ -3,7 +3,7 @@
 import numpy
 import sys
 
-print("Este es un programa de multiplicar matrices 3x3")
+print("Este es un programa de multiplicar matrices")
 
 r1=int(input("Numero de rengloes de la matriz A:"))
 c1=int(input("Numero de columnas de la matriz A:"))
@@ -20,13 +20,13 @@ if (c1!= r2):
 matriz1=numpy.zeros((r1,c1))
 matriz2=numpy.zeros((r2,c2))
 matrizr=numpy.zeros((r1,c2)) 
-print("Introduce los elementos de la matriz 1")
+print("Introduce los elementos de la matriz A")
 
 for r in range(0,r1):
     for c in range(0,c1):
         matriz1[r,c]=input("Elemento A["+str(r+1)+str(c+1)+"]")
 
-print("Introduce los elementos de la matriz 2")
+print("Introduce los elementos de la matriz B")
 
 for r in range(0,r2):
     for c in range(0,c2):
