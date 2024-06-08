@@ -3,7 +3,7 @@ import numpy as np
 
 # Realice una función que calcule el área de un cuadrado
 def get_area_square(side):
-    area = side ** 2
+    area = side ** side
     return area
 
 
