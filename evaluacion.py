@@ -39,7 +39,7 @@ def get_diagonal_values_from(matrix):
 
 # Elimine los valores adyacentes a todo valor NaN
 # INPUT = [6 10 5 8 9 NaN 23 9 7 3 21 43 NaN 4 6 7 8]
-# OUTPUT = [6 10 5 8 9 7 3 21 43 7 8]
+# OUTPUT = [6 10 5 8 9 7 3 21 6 7 8]
 
 # Replique los elementos de un vector
 # n=2, A=[1 2 3] -> [1 1 2 2 3 3]
