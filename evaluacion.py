@@ -108,7 +108,6 @@ def vector_Resultado(x):
 
 
 
-
 # Elimine los elementos redundantes en un vector, manteniendo el orden original
 # in = [5 3 6 4 7 7 3 5 9]
 # out = [5 3 6 4 7 9]
