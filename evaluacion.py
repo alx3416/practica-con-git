@@ -3,14 +3,10 @@ import numpy as np
 # Realice una función que calcule el área de un cuadrado
 def get_area_square(side):
     if side <= 0:
-        area = 0
-        print("Largo debe ser mayor a cero")
+        return 0
     else:
         area = side * side
     return area
-
-print(get_area_square(3))
-
 
 # Realice una función que calcule la hipotenusa
 def get_hypotenuse(side1, side2):
@@ -28,7 +24,7 @@ def reverse_list(vector):
 # de una lista mayores a un valor umbral
 def get_indexes(vector, threshold):
     indexes = [i for i, value in enumerate(vector) if value > threshold]
-    return indexes
+    return indexes if indexes else []
 
 
 # Obtenga el valor máximo de una matriz

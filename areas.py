@@ -7,5 +7,3 @@ def get_square_area(lado):
     else:
         square_area = lado * lado
     return square_area
-
-print(get_square_area(2))
