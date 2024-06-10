@@ -2,8 +2,14 @@ import numpy as np
 
 # Realice una función que calcule el área de un cuadrado
 def get_area_square(side):
-    area = side*side
+    if side <= 0:
+        area = 0
+        print("Largo debe ser mayor a cero")
+    else:
+        area = side * side
     return area
+
+print(get_area_square(3))
 
 
 # Realice una función que calcule la hipotenusa
