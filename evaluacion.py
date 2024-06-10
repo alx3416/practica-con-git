@@ -1,40 +1,39 @@
 import numpy as np
 
-
 # Realice una función que calcule el área de un cuadrado
 def get_area_square(side):
-    area = None
+    area = side*side
     return area
 
 
 # Realice una función que calcule la hipotenusa
 def get_hypotenuse(side1, side2):
-    hypotenuse = None
+    hypotenuse = np.sqrt(side1**2 + side2**2)
     return hypotenuse
 
 
 # Obtenga el vector en orden inverso
 def reverse_list(vector):
-    result = vector
+    result = vector[::-1]
     return result
 
 
 # Obtenga la posición o índice de los elementos
 # de una lista mayores a un valor umbral
 def get_indexes(vector, threshold):
-    indexes = []
+    indexes = [i for i, value in enumerate(vector) if value > threshold]
     return indexes
 
 
 # Obtenga el valor máximo de una matriz
 def get_max_value_from(matrix):
-    max_value = None
+    max_value = max(max(row) for row in matrix)
     return max_value
 
 
 # Obtenga los valores diagonales de una matriz
 def get_diagonal_values_from(matrix):
-    diagonal_values = []
+    diagonal_values = [matrix[i][i] for i in range(len(matrix))]
     return diagonal_values
 
 # Elimine los valores adyacentes a todo valor NaN

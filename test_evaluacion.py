@@ -6,6 +6,7 @@ import pytest
 def test_get_square_area_1():
     expected_result = 9
     assert evals.get_area_square(3) == expected_result
+    print (get_area_square(3))
 
 
 def test_get_square_area_2():
