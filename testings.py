@@ -11,3 +11,7 @@ def test_get_square_area_2():
 
 def test_get_square_area_3():
     assert ars.get_square_area(0) == 0
+
+print(test_get_square_area_1())
+print(test_get_square_area_2())
+print(test_get_square_area_3())

@@ -7,7 +7,6 @@ def test_get_square_area_1():
     expected_result = 9
     assert evals.get_area_square(3) == expected_result
 
-
 def test_get_square_area_2():
     expected_result = 6.25
     assert evals.get_area_square(2.5) == expected_result
