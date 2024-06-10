@@ -54,5 +54,3 @@ def test_get_diagonal_values_1():
     matrix = np.array([0, 3])
     expected_result = evals.get_diagonal_values_from(np.arange(4).reshape(2, 2))
     assert np.array_equal(matrix, expected_result)
-
-
