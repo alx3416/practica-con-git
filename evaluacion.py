@@ -93,7 +93,7 @@ def eliminar_redundantes(vector):
     ValoresUnicos = set()
     result = []
     for num in vector:
-        if num not in unique_elements:
+        if num not in ValoresUnicos:
             result.append(num)
             unique_elements.add(num)
     return result
