@@ -9,7 +9,7 @@ def get_area_square(side):
 
 # Realice una función que calcule la hipotenusa
 def get_hypotenuse(side1, side2):
-    hypotenuse = (side1 ** 2) + (side2 ** 2)
+    hypotenuse = sqrt((side1 ** 2) + (side2 ** 2))
     return hypotenuse
 
 
