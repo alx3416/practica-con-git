@@ -55,7 +55,8 @@ def test_get_diagonal_values_1():
     expected_result = evals.get_diagonal_values_from(np.arange(4).reshape(2, 2))
     assert np.array_equal(matrix, expected_result)
 
-#Se agregan para hacer las pruebas que no vienen estructuradas en evaluacion
+
+# Se agregan para hacer las pruebas que no vienen estructuradas en evaluacion
 def test_remove_adjacent_to_nan():
     input_list = [6, 10, 5, 8, 9, np.nan, 23, 9, 7, 3, 21, 43, np.nan, 4, 6, 7, 8]
     expected_output = [6, 10, 5, 8, 9, 7, 3, 21, 6, 7, 8]
@@ -67,11 +68,12 @@ def test_replicate_elements():
     n_1 = 2
     expected_output_1 = [1, 1, 2, 2, 3, 3]
     assert evals.replicate_elements(vector_1, n_1) == expected_output_1
-    
+
     vector_2 = [2, 1]
     n_2 = 0
     expected_output_2 = []
     assert evals.replicate_elements(vector_2, n_2) == expected_output_2
+
 
 def test_extract_first_nonzero_digit():
     x = [1, 0.3, -2, 0.001, -0.0006, 582398, 3020]
@@ -81,8 +83,8 @@ def test_extract_first_nonzero_digit():
     assert evals.extract_first_nonzero_digit(x) == expected_output_x
     assert evals.extract_first_nonzero_digit(y) == expected_output_y
 
+
 def test_remove_redundant_elements():
     input_vector = [5, 3, 6, 4, 7, 7, 3, 5, 9]
     expected_output = [5, 3, 6, 4, 7, 9]
     assert evals.remove_redundant_elements(input_vector) == expected_output
-
