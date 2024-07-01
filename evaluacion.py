@@ -15,12 +15,6 @@ def get_hypotenuse(side1, side2):
     hipotenusa = math.sqrt(side1 ** 2 + side2 ** 2)
     return hipotenusa
 
-side1 = int(input("Ingrese lado1 del TRect: "))
-side2 = int(input("Ingrese lado2 del TRect: "))
-
-hipotenusa = get_hypotenuse(side1, side2)
-print("Hypotenus de catetos", side1,side2,  "es:", hipotenusa)
-print("\n ")
 
 # Obtenga el vector en orden inverso
 def invertir_lista(lista):
