@@ -8,7 +8,7 @@ def get_area_square(side):
         area = side * side
         return area
 
-side = int(input("Ingrese lado del cuadrado: "))
+# side = int(input("Ingrese lado del cuadrado: "))
 area = get_area_square(side)
 print("El Area del cuadrado con lado", side, "es:", area)
 print("\n ")
